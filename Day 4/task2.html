@@ -1,0 +1,36 @@
+<!-- Form Creation using input field, text area and submit button. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2>Website Feedback</h2>
+
+    <!-- form container for form elements -->
+    <form action="#" method="post">   
+
+        <!-- Name Input, single line input text  -->
+
+ <label for="email">Name:</label><br>
+ <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+ 
+ <!-- Message Textarea  For multiline text(long messages) -->
+
+  <label for="feedback">Your feedback</label><br>
+  <textarea name="feedback" id="feedback" rows="6 cols="35" placeholder="Write your feedback here....." required>
+</textarea><br><br>
+
+<!-- Rating Input  -->
+
+ <label for="rating">Rating (1 to 5)</label><br>
+ <input type="number" id="rating" name="rating" min="1" max="5"><br><br>
+
+ <!-- Submit Button -->
+
+  <input type="Submit" value="Send Feedback">
+    </form>
+</body>
+</html>
