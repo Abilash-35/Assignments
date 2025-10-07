@@ -1,4 +1,4 @@
-<!-- Global attributes with id, class, title , style, src, alt  -->
+<!-- Global attributes with id, class, title -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h3 style="color:green;">Attributes Page</h3>
+    <h3>Attributes Page</h3>
 
     <!-- Intro- Unique Identifier, class- styling/grouping similar elements  -->
      <!-- title - For text tooltip -->
@@ -16,20 +16,21 @@
     This is a paragraph. which contains id, class and title as global attributes.
     </p>
 
-    <!-- href - which specifies web address/page to open. 
-    target- opens this link in a new tab /which area. -->
+    <p id="About" class="info" title="About section">
+  This paragraph gives information about the topic or content of the page.
+   </p>
 
-    <a href="https://stcourier.com/" target="_blank">ST Courier</a>
+    <p id="Note" class="warning" title="Important note">
+  Please note that all fields are required before submitting the form.
+   </p>
 
-    <!-- Src- gives the path of the image
-    alt- provides alternative text if image doesn't
-     load or useful for screenreaders. -->
-     <!-- title - It is a tooltip on hover -->
-    <img src="./images.jpg" alt="Football" title="Sports Image">
+    <p id="Summary" class="text" title="Summary of content">
+  This paragraph summarizes the main points discussed above.
+   </p>
 
-    <!-- Here style mentioned as applying Inline CSS directly to the element. -->
+   <p id="Footer" class="footer" title="Footer message">
+  Thank you for visiting! Contact us for more details.
+</p>
 
-    <p style="color:blueviolet">
-        This text is blueviolet using this style attribute </p>
 </body>
 </html>
