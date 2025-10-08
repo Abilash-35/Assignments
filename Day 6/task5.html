@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+</head>
+<body>
+
+      <h3>Signup Form</h3>
+    <form action="/submit" method="post">
+
+    <!-- Here required attribute is used where user must fill those field before submitting the form. -->
+    
+    <!-- Name -->
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" required>
+      
+    <!-- Email -->
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email"  placeholder="Enter your email id">
+      
+    <!-- password -->
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password" minlength="6" maxlength="10" required>
+
+    <!-- Submit -->
+    <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>     
