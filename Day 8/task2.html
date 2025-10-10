@@ -1,11 +1,58 @@
+<!-- Selectors -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Selectors</title>
+    <style>
+        p{
+            font-size: 15px;
+        color: Green;
+        }
+        .highlight{
+            color:yellow
+            border = 5px solid orange;
+        }
+       #about {
+      background-color: red;
+      border-radius: 8px;
+    }
+
+    .note {
+      color: rgb(163, 175, 51);
+      font-style: italic;
+    }
+    </style>
+
 </head>
 <body>
+      <!-- Type selector  -->
+  <h1>Welcome to My Website</h1>
+
+  <!-- Type selector  -->
+  <p>This is a simple paragraph using the type selector its perfect for testing or small design tweaks. 
+        Inline CSS allows developers to see instant results without switching files, 
+        making it ideal for beginners learning how styling works. </p>
+
+  <!--Class selector -->
+  <p class="highlight">This paragraph uses the <b>.highlight class selector. It's great for projects with a single page or when you want to test multiple styles together. 
+        For instance, you can define a class once and apply it to any element throughout the document. </p>
+
+  <!-- ID selector -->
+  <div id="about">
+    <h2>About Section</h2>
+    <p>This section is styled with the <b>#about</b> ID selector.For example, you might use external CSS for your main design, 
+        internal CSS for a page-specific layout, and inline CSS for quick adjustments or dynamic styling. /p>
+  </div>
+
+  <!--  Another class selector -->
+  <p class="note">Note: You can mix and reuse class selectors on multiple elements!
+            Combining inline and internal CSS can be helpful in cases
+             where you want most of your design controlled by internal styles, 
+        but need to make one or two quick overrides. For example, 
+        if a particular paragraph needs a slightly different background or text color, 
+        you can easily apply it inline without creating a new class.</p>
     
 </body>
 </html>

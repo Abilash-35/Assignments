@@ -1,0 +1,55 @@
+<!-- Universal Selectors -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selectors</title>
+    <style>
+/* Universal Selector */
+            *{
+            margin: 0;
+            padding: 0;
+        }
+      
+        p{
+            background-color: brown;
+            padding: 12px;
+            margin: 15px 0;
+        }
+
+        body{
+            background-color: green;
+            padding: 20px;
+        }
+    </style>
+ </head>
+ <body>
+    
+     <p>
+    The universal selector *  applies styles to every element on the page. 
+    Its often used at the beginning of a CSS file to remove default spacing.
+  </p>
+
+  <p class="new">
+    Without resetting margins and padding, browsers add their own default spacing to headings, paragraphs, and lists — 
+    which can make layouts inconsistent across browsers.
+  </p>
+
+  <p>
+    By setting <b>margin: 0 and padding 0 , you ensure all elements start from a clean slate.
+    Then, you can manually add spacing where needed.
+  </p>
+
+  <p>
+    Using  box-sizing: border-box  with the universal selector makes width calculations easier — 
+    padding and borders stay inside the elements defined width.
+  </p>
+
+  <p>
+    Overall, the universal selector is a simple but powerful tool 
+    to keep your CSS consistent and predictable across browsers.
+  </p>
+
+ </body>
+ </html>

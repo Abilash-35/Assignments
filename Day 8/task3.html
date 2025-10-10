@@ -1,0 +1,59 @@
+<!-- Group Selectors -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h3,h4{
+            color: Red;
+        }
+
+        p + h3{
+            color: black;
+            font-size: 17px;
+            text-align: center;
+        }
+        .highlight{
+            background-color: green;
+            color: white;
+        }
+
+
+    </style>
+ </head>
+ <body>
+    <h3>Grouping Selectors</h3>
+    <h1>Selectors are much needed for CSS</h1>
+<h4> It improves readability and consistency across the webpage</h4>
+
+     <p>
+        <h3>CSS Grouped Selectors</h3>
+    CSS grouped selectors allow you to apply the same style to multiple HTML elements at once. 
+    For example, you can style all headings like <b>h1, h2, and h3</b> together without repeating the same code multiple times.
+    This makes your stylesheet shorter and easier to maintain.
+  </p>
+
+  <p>
+    Grouped selectors are written by separating element names with a comma. 
+    For instance, h1, h2, h3 green applies the same color to all these heading levels.
+    This technique improves readability and consistency across your webpage.
+  </p>
+
+  <p class="highlight">
+    Using grouped selectors is especially useful in large projects where many similar elements share common styles. 
+    It ensures design uniformity and saves a lot of time during development.
+  </p>
+
+  <p>
+    Remember that each element inside the group will receive exactly the same styling rules. 
+    If you want to customize one of them later, you can still use an ID or class selector for that specific element.
+  </p>
+
+  <p>
+    Overall, grouping selectors is one of the simplest yet most powerful ways to keep your CSS clean, organized, and efficient.
+    It’s a great habit to develop as you continue learning web design.
+  </p>
+ </body>
+ </html>

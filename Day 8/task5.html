@@ -1,0 +1,96 @@
+<!-- Attribute Selectors -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        
+        /* Input Attribute selectors */
+        input[type=email]{
+            background-color: lightgreen;
+            
+        }
+
+        /* link attribute selectors */
+a[href^= "https"]{
+    color: green;
+}
+        input[type=password]{
+            background-color: lightblue;
+            
+        }
+
+           input[type=text]{
+            background-color: green;
+            
+        }
+   input[type=submit]{
+            background-color: orange;
+            
+        }
+   input[type=number]{
+            background-color: red;
+            
+        }
+        ::placeholder {
+  color: White;
+}
+    </style>
+ </head>
+ <body>    
+   <h3>Registration Form</h3>
+      
+        <form action="" method="post">
+      
+            <!-- Fullname     -->
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                     <br><br>
+        <!-- Email -->
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                     <br><br>
+        <!-- password -->
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+             <br><br>
+        
+             <!-- Gender -->
+        <label>Gender: </label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label>Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label>Female</label>
+        <br><br>
+
+        
+        <!-- Hobbies -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label><br>
+
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label><br>
+
+        <input type="checkbox" id="music" name="hobbies" value="music">
+        <label for="music">Music</label><br>
+
+        <input type="checkbox" id="travel" name="hobbies" value="travel">
+        <label for="travel">Travel</label>
+        <br><br>
+        
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="120" required>
+        <br><br>
+
+        <a href="https://wwww.youtube.com">Contact Us</a> <br><br>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+ </body>
+ </html>
