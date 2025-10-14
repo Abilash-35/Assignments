@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table</title>
+ 
+ <style>
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+    }
+    .pricing-box {
+      width: 220px;
+      background-color: lightsalmon;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    /* Used different border styles */
+
+    .basic {
+      border: 3px solid #4caf50;  /* solid border */
+    }
+
+    .standard {
+      border: 3px dashed #2196f3; /* dashed border */
+    }
+
+    .premium {
+      border: 4px double #ff9800; /* double border */
+    }
+
+    .pricing-box h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .pricing-box ul {
+      padding: 0;
+      margin: 10px 0;
+      list-style: none;  /* removes bullets */
+
+    }
+
+    .pricing-box ul li {
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .btn {
+
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color:lightgreen;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing-box basic">
+    <h2>Basic Plan</h2>
+    <p class="price">45/ mo</p>
+    <ul>
+      <li>1 User</li>
+      <li>5GB Storage</li>
+      <li>Email Support</li>
+    </ul>
+    <button class="btn">Choose Plan</button>
+  </div>
+
+  <div class="pricing-box standard">
+    <h2>Standard Plan</h2>
+    <p class="price">120 / mo</p>
+    <ul>
+      <li>5 Users</li>
+      <li>50GB Storage</li>
+      <li>Priority Support</li>
+    </ul>
+    <button class="btn">Choose Plan</button>
+  </div>
+
+  <div class="pricing-box premium">
+    <h2>Premium Plan</h2>
+    <p class="price">340 / mo</p>
+    <ul>
+      <li>Unlimited Users</li>
+      <li>200GB Storage</li>
+      <li>24/7 Support</li>
+    </ul>
+    <button class="btn">Choose Plan</button>
+  </div>
+
+</body>
+</html>
