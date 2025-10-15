@@ -1,17 +1,17 @@
-<!-- Color Gradient -->
+<!--  Text Transform and text shadow -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Gradient</title>
+    <title> Text Transform and text shadow</title>
  <style>
 
     body {
       height: 100%;
       margin: 0;
-      background: linear-gradient(180deg, #00c6ff 0%, #0072ff 50%, #7b61ff 100%);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Poppins', sans-serif;
       color: white;
     }
 
@@ -25,6 +25,22 @@
       box-sizing: border-box;
     }
 
+    /* Used text transform and text shadows */
+    h1{
+        text-transform: capitalize;
+    }
+    p{
+      margin-top: 20px;
+      text-shadow: 6px 6px 10px rgba(7,9,4,0.4);
+     transition: transform 0.4s ease;
+
+    }
+      p:hover {
+      color: #ffe066;
+      cursor: pointer;
+    transform: skewX(10deg) scale(1.1);
+
+    }
   </style>
 </head>
 <body>
