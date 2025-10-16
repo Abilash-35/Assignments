@@ -6,19 +6,165 @@
     <title>Landing Page </title>
 <style>
     .hero{
-  background: url('hero-bg.jpg') center/cover no-repeat;
-    }
+  position: relative;
+  height: 100vh;  
+  padding-top: 60px;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') 
+  no-repeat center center/cover;
+}    
+
+.btn {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 12px;
+   text-decoration: none;  /* removes link line in the text */
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+    .btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+.navbar {
+  position: fixed;            /* stays on top when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+height: 70px;
+  background: rgba(0, 0, 0, 0.7);    /* transparent dark bar */
+  color: white;
+  display:flex; 
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;             /* ensures it appears above hero */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff6600;
+}
+
+.contact-btn {
+  position: fixed;         
+  bottom: 20px;           
+  right: 20px;            
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+  z-index: 999;          
+}
+ 
+.contact-btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+
+.about {
+  padding: 80px 15%;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+  font-family: 'Poppins', sans-serif; 
+  letter-spacing: 0.5px;              /* for readability */
+   line-height: 1.8;                  /* Space between lines */
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;                /* more spacing for headings */
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;       
+  top: 0;                 
+  background: #222;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  z-index: 999;         
+  letter-spacing: 1px;
+}
+
     </style>
 </head>
 <body>
+
+    <!-- Fixed nav bar at the top -->
+    <nav class="navbar">
+  <div class="logo">MyBrand</div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="site-header">
+  <h1>My Awesome Website</h1>
+</header>
+
     <section class ="hero">
- <div class=""hero-content">
+ <div class="hero-content">
  <h1>Our Product and Our Story</h1>
     <p>Here engage with a beautiful hero section.</p>
         <a href="#learn-more" class="btn">Get Started</a>
 
     </div>
     </section>
-  
+    <section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    We are a creative digital focused on building modern, user-friendly websites.
+    Our team specializes in crafting high-performing websites, engaging user experience, and
+    scalable software tailored to your business goals.
+  </p>
+</section>
+      <a href="#contact" class="contact-btn">Contact Us</a>
+
 </body>
 </html>
