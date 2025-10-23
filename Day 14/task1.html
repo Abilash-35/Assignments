@@ -1,0 +1,97 @@
+<!-- CSS Animations and transitions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     /* Box -color change on hover */
+        .color-box{
+            background-color: rgb(30, 0, 255);
+            color:white;
+            height:150px;
+            width:150px;
+            transition: background-color 0.5s ease;
+
+        }
+        .color-box:hover{
+            background-color: coral;
+            cursor:pointer;
+        }
+
+        /* Slide Text Animations */
+.slide-text {
+  display: inline-block;
+  animation: slideRight 2s linear infinite alternate;
+}
+   
+        @keyframes slideRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+ /* Box will rotate using animations */
+@keyframes rotateBox {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.rotate-box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  animation: rotateBox 3s linear infinite;
+}
+
+/* Image grow on hover */
+.zoom-img {
+  transition: transform 0.3s ease;
+}
+
+.zoom-img:hover {
+  transform: scale(1.2);
+}
+ /* Button with focus and hover */
+
+.smooth-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: royalblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.smooth-btn:hover {
+  background: dodgerblue;
+  transform: scale(1.05);
+}
+
+.smooth-btn:focus {
+  outline: 2px solid dodgerblue;
+  background: navy;
+}
+
+    </style>
+</head>
+<body>
+<h2 class="slide-text">Sliding Text Animations</h2>
+
+<div class="color-box"></div>
+<br>
+<div class="rotate-box"></div>
+
+<br>
+
+<img src="/Ball.jpg" alt="Football" class="zoom-img">
+<br>
+
+<button class="smooth-btn">Join Me</button>
+
+
+
+</body>
+</html>

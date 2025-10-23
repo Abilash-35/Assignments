@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      margin: 0;
+      height: 100vh;
+      background-color: lightblue; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      transition: background-color 0.5s ease;
+    }
+
+        body{
+            background-color: brown;
+        }
+     
+        @media (min-width: 600px) {
+      body {
+        background-color: lightgreen;
+      }
+    }
+
+    /* When width is 900px or more */
+    @media (min-width: 900px) {
+      body {
+        background-color: lightcoral;
+      }
+    }
+
+    .grid{
+        background-color: red;
+        display:grid;
+        grid-template-columns: (2fr);
+    }
+    </style>
+</head>
+<body>
+
+    
+  <div class="container">
+    <div class="column left">
+      <h2>Grid-Left</h2>
+      <p>This is the left side of the layout.</p>
+    </div>
+    <div class="column right">
+      <h2>Grid-Right</h2>
+      <p>This is the right side of the layout.</p>
+    </div>
+  </div>
+
+
+   Making this page as responsive using media queries
+</body>
+</html>
