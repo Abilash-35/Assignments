@@ -1,60 +1,141 @@
+<!-- CSS FlexBox -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
+    <title>CSS FlexBox</title>
+   <style>
+    /* Background color changes at 600px and 900px */
+    body {
       margin: 0;
-      height: 100vh;
-      background-color: lightblue; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 50px;
+      background-color: lightblue;
       transition: background-color 0.5s ease;
+      font-family: Arial, sans-serif;
     }
 
-        body{
-            background-color: brown;
-        }
-     
-        @media (min-width: 600px) {
+    @media (min-width: 600px) {
       body {
         background-color: lightgreen;
       }
     }
 
-    /* When width is 900px or more */
     @media (min-width: 900px) {
       body {
         background-color: lightcoral;
       }
     }
 
-    .grid{
-        background-color: red;
-        display:grid;
-        grid-template-columns: (2fr);
+    /* Two-column layout that becomes one column on mobile */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
     }
-    </style>
+
+    .column {
+      flex: 1;
+      padding: 1rem;
+      box-sizing: border-box;
+      border: 2px solid #fff;
+    }
+
+    .left {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .right {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    /* Using em and rem units for text sizing */
+    html {
+      font-size: 16px; /* Base size for rem */
+    }
+
+    .text {
+      padding: 1rem;
+      background-color: #fff;
+      color: #333;
+      margin: 1rem;
+      border-radius: 8px;
+    }
+
+    .text h2 {
+      font-size: 2rem; /* 2 × root font size = 32px */
+    }
+
+    .text p {
+      font-size: 1.5em; /* 1.5 × parent element's font size */
+    }
+
+    /* Section using vh and vw for full-screen layout */
+    .fullscreen {
+      height: 100vh;
+      width: 100vw;
+      background-color: red;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    /* 5Flexbox layout switching with min-width queries */
+    .flex-switch {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      border: 3px solid #000;
+    }
+
+    .flex-switch div {
+      flex: 1;
+      padding: 1rem;
+      text-align: center;
+      background-color: #eee;
+      border: 1px solid #ccc;
+    }
+
+    @media (min-width: 700px) {
+      .flex-switch {
+        flex-direction: row;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    
-  <div class="container">
+  <section class="container">
     <div class="column left">
-      <h2>Grid-Left</h2>
-      <p>This is the left side of the layout.</p>
+      <h2>Left Column</h2>
+      <p>This column will move above the right column on smaller screens.</p>
     </div>
     <div class="column right">
-      <h2>Grid-Right</h2>
-      <p>This is the right side of the layout.</p>
+      <h2>Right Column</h2>
+      <p>This is the second column that stacks below on mobile.</p>
     </div>
-  </div>
+  </section>
 
+  <section class="text">
+    <h2>em and rem</h2>
+    <p>The <strong>rem</strong> unit is relative to the root font size , while em is relative to its parents font size.</p>
+  </section>
 
-   Making this page as responsive using media queries
+  <section class="fullscreen">
+    Full-screen section using 100vh × 100vw
+  </section>
+
+  <section class="flex-switch">
+    <div>Flex Item 1</div>
+    <div>Flex Item 2</div>
+    <div>Flex Item 3</div>
+  </section>
 </body>
 </html>
