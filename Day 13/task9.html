@@ -1,0 +1,129 @@
+<!-- Responsive Navbar by em/rem -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar by em/rem</title>
+  <style>
+    html {
+      font-size: 16px; /* 1rem = 16px base */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 1rem;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 70rem; /* 70 * 16 = 1120px */
+      margin: auto;
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.5rem; /* 1.5 × 16 = 24px */
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem; /* 1.5 × 16 = 24px spacing */
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem; /* 16px base size */
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff9800;
+    }
+
+    /*  Font size */
+
+    /* Tablets (≤900px) — slightly smaller font */
+    @media (max-width: 56.25em) { /* 900px / 16 */
+      html {
+        font-size: 15px; /* makes 1rem = 15px */
+      }
+
+      .logo {
+        font-size: 1.4rem;
+      }
+
+      .nav-links a {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Mobile (600px) — vertical layout and smaller text */
+    @media (max-width: 37.5em) { /* 600px / 16 */
+      html {
+        font-size: 14px;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 0.5em 0;
+        border-top: 1px solid #444;
+      }
+
+      .nav-links a:first-child {
+        border-top: none;
+      }
+    }
+
+    section {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.125rem; /* 18px */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">MySite</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <h1>My website</h1>
+    <p>Resize the window or zoom to see how text scales naturally using em/rem units.</p>
+  </section>
+</body>
+</html>

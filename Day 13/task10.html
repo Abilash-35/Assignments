@@ -1,0 +1,82 @@
+<!-- Responsive Hero Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Hero Section</title>
+  <style>
+    /* ===== Base Styles ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hero Section*/
+    .hero {
+      height: 100vh; /* Full viewport height */
+      width: 100vw;  /* Full viewport width */
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.1)),
+                  url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 6vw; /* Scales with viewport width */
+      margin: 0 0 1rem;
+      letter-spacing: 0.1em;
+    }
+
+    .hero p {
+      font-size: 2vw; /* Scales with viewport width */
+      max-width: 60vw; 
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      font-size: 1.2vw;
+      padding: 1em 2em;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff9800;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #e68900;
+    }
+
+    /*  Mobile Responsive  */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 10vw;
+      }
+
+      .hero p {
+        font-size: 4vw;
+        max-width: 80vw;
+      }
+
+      .hero button {
+        font-size: 3.5vw;
+        padding: 0.8em 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>My Portfolio</h1>
+    <p> Here using creative responsive layouts, and smooth user experiences</p>
+    <button>View My Work</button>
+  </section>
+</body>
+</html>

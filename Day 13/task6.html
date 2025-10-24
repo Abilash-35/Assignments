@@ -1,0 +1,194 @@
+<!-- Personal portfolio Webpage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        aside {
+            background-color: #fff;
+            margin: 1.5rem auto;
+            max-width: 1000px;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        aside a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /*  Media Queries */
+
+        /* Tablets and small laptops (900px) */
+        @media (max-width: 900px) {
+            main, aside {
+                padding: 1rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 10px;
+            }
+        }
+
+        /* Mobile screens (600px) */
+        @media (max-width: 600px) {
+            header h2 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+
+            section, aside {
+                padding: 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h2>Abilash B</h2>
+        <p>Software Engineer</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+                <a href="#Projects">Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <section id="About">
+            <h1>About Me</h1>
+            <p>I am Abi, passionate about singing and exploring new technologies. I enjoy traveling to my native place where peace, silence, and the sound of waves bring calmness. I love tackling complex problems and understanding how things work.</p>
+        </section>
+
+        <section id="Projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Portfolio Website</h3>
+                <p>This webpage shows how I used semantic HTML elements to build a structured portfolio.</p>
+            </article>
+            <article>
+                <h3>PDF Editor</h3>
+                <p>This project was built from scratch using WPF and pure MVVM architecture. It includes toolbar commands, menus, bookmarks, and lightweight performance.</p>
+            </article>
+        </section>
+    </main>
+    
+    <!-- Aside (Contact links) -->
+    <aside id="Contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>
+                Email: <a href="mailto:35abilash@gmail.com" target="_blank">35abilash@gmail.com</a><br>
+                GitHub: <a href="https://github.com/Abilash-35/Assignments" target="_blank">github.com/Abilash-35</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Abilash B. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
