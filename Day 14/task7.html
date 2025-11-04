@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Card Flip</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 3D container */
+    .card-container {
+      perspective: 1000px;
+    }
+
+    /* Card */
+    .card {
+      width: 250px;
+      height: 150px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+      cursor: pointer;
+    }
+
+    /* Flip on hover */
+    .card-container:hover .card {
+      transform: rotateY(180deg);
+    }
+
+    /* Card faces */
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: white;
+    }
+
+    .front {
+      background-color: #2196F3;
+    }
+
+    .back {
+      background-color: #f44336;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="front">Front Side</div>
+      <div class="back">Back Side</div>
+    </div>
+  </div>
+</body>
+</html>

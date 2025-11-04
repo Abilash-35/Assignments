@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      background-color: #2196F3;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      border: 2px solid #2196F3;
+      transition: transform 0.3s ease;
+    }
+
+    iframe:hover {
+      transform: scale(1.05);
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2196F3;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #1565C0;
+      transform: scale(1.1);
+    }
+
+    main {
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    article {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    article:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    aside {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    aside:hover {
+      transform: translateY(-4px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #2196F3;
+      color: white;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #2196F3;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h2>Abilash B</h2>
+    <p>Software Engineer</p>
+    <p>Welcome to my portfolio! Below is my GitHub profile embedded in an iframe.</p>
+  </header>
+
+  <!-- Iframe -->
+  <iframe src="https://github.com/Abilash-35.git/" title="My Github Profile" frameborder="2" width="400px" height="200px"></iframe>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Projects">Projects</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <section id="About">
+      <h1>About me</h1>
+      <p>I am Abi, a passionate singer and tech enthusiast. I love exploring new technologies and solving complex problems. I also enjoy peaceful trips to my native place where the sound of waves brings calmness and focus.</p>
+    </section>
+
+    <section id="Projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Portfolio Website</h3>
+        <p>This webpage mainly shows how I understood HTML using semantic elements.</p>
+      </article>
+      <article>
+        <h3>PDF Editor</h3>
+        <p>This project was built from scratch using WPF (MVVM). It provides a lightweight and user-friendly alternative to traditional PDF editors, including toolbar commands, menus, bookmarks, and thumbnails.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Aside (Contact links) -->
+  <aside id="Contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>
+        Email: <a href="mailto:35abilash@gmail.com" target="_blank">35abilash@gmail.com</a><br>
+        Github: <a href="https://github.com/Abilash-35/" target="_blank">github.com/Abilash-35</a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Abilash B. All Rights Reserved</p>
+  </footer>
+</body>
+</html>
